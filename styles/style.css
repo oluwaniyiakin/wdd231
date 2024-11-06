@@ -1,0 +1,120 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #0a2e5d;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    color: #fff;
+    background: none;
+    border: none;
+}
+
+main {
+    padding: 20px;
+}
+
+#coursework, #location, #certificate {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+#location img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.filters button {
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.course-card {
+    padding: 15px;
+    background-color: #d4edda;
+    border-radius: 5px;
+    width: 120px;
+    text-align: center;
+}
+
+footer {
+    background-color: #0a2e5d;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-toggle {
+        display: inline-block;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    #course-list {
+        flex-direction: column;
+    }
+}
