@@ -20,6 +20,8 @@ const courses = [
 function filterCourses(type) {
     const courseList = document.getElementById('course-list');
     courseList.innerHTML = '';
+    let totalCredits = 0;
+
     courses
         .filter(course => type === 'all' || course.name.startsWith(type))
         .forEach(course => {
@@ -28,8 +30,16 @@ function filterCourses(type) {
             courseItem.style.backgroundColor = course.completed ? '#d4edda' : '#f8d7da';
             courseItem.textContent = `${course.name}`;
             courseList.appendChild(courseItem);
+
+            // Add to total credits if the course is completed
+            if (course.completed) {
+                totalCredits += course.credits;
+            }
         });
+
+    // Display total credits
+    document.getElementById('total-credits').textContent = totalCredits;
 }
 
-// Initialize with all courses displayed
+// Initialize with all courses displayed and credits calculated
 filterCourses('all');
