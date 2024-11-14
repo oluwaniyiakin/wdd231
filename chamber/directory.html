@@ -10,7 +10,7 @@
     <meta name="author" content="Oluwaniyi Akin Oladapo">
     
     <!-- Favicon -->
-    <link rel="icon" href="https://oluwaniyiakin.github.io/wdd231/chamber/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     
     <!-- Open Graph Meta Tags for Social Sharing -->
     <meta property="og:title" content="Chamber of Commerce Directory">
@@ -23,18 +23,36 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <!-- Header with Navigation -->
     <header>
-        <h1>Chamber of Commerce Directory</h1>
-        <button id="toggleView">Toggle View</button>
+        <h1>Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Business Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="podcast.html">Podcast</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main id="directory"></main>
+    <!-- Main content area -->
+    <main>
+        <h2>Business Directory</h2>
+        <button id="toggleView">Toggle Grid/List View</button>
+        
+        <section id="members" class="grid-view"></section>
+    </main>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Lagos Chamber of Commerce</p>
     </footer>
 
-    <!-- JavaScript for loading data and toggle view functionality -->
-    <script src="scripts/main.js" defer></script>
+    <!-- JavaScript to load and display JSON data -->
+    <script src="scripts/main.js"></script>
 </body>
 </html>

@@ -1,58 +1,58 @@
 [
   {
-      "name": "Olu Olukoya Seun",
-      "address": "123 Business St, Lagos, Nigeria",
-      "phone": "08012345678",
-      "website": "https://johndoe.com",
-      "image": "johndoe.JPEG",
-      "membershipLevel": "Gold"
+    "name": "Olu Olukoya Seun",
+    "address": "123 Business St, Lagos, Nigeria",
+    "phone": "08012345678",
+    "website": "https://johndoe.com",
+    "image": "johndoe.JPEG",
+    "membershipLevel": "Gold"
   },
   {
-      "name": "Jane Smith",
-      "address": "456 Market Ave, Lagos, Nigeria",
-      "phone": "08087654321",
-      "website": "https://janesmith.com",
-      "image": "janesmith.JPEG",
-      "membershipLevel": "Silver"
+    "name": "Jane Smith",
+    "address": "456 Market Ave, Lagos, Nigeria",
+    "phone": "08087654321",
+    "website": "https://janesmith.com",
+    "image": "janesmith.JPEG",
+    "membershipLevel": "Silver"
   },
   {
-      "name": "Alex Johnson",
-      "address": "789 Commerce Rd, Lagos, Nigeria",
-      "phone": "08011223344",
-      "website": "https://alexjohnson.com",
-      "image": "alexjohnson.JPEG",
-      "membershipLevel": "Bronze"
+    "name": "Alex Johnson",
+    "address": "789 Commerce Rd, Lagos, Nigeria",
+    "phone": "08011223344",
+    "website": "https://alexjohnson.com",
+    "image": "alexjohnson.JPEG",
+    "membershipLevel": "Bronze"
   },
   {
-      "name": "Emily Davis",
-      "address": "1011 Business Pkwy, Lagos, Nigeria",
-      "phone": "08033445566",
-      "website": "https://emilydavis.com",
-      "image": "emilydavis.JPEG",
-      "membershipLevel": "Gold"
+    "name": "Emily Davis",
+    "address": "1011 Business Pkwy, Lagos, Nigeria",
+    "phone": "08033445566",
+    "website": "https://emilydavis.com",
+    "image": "emilydavis.JPEG",
+    "membershipLevel": "Gold"
   },
   {
-      "name": "Michael Brown",
-      "address": "1213 Corporate Ln, Lagos, Nigeria",
-      "phone": "08044556677",
-      "website": "https://michaelbrown.com",
-      "image": "michaelbrown.JPEG",
-      "membershipLevel": "Silver"
+    "name": "Michael Brown",
+    "address": "1213 Corporate Ln, Lagos, Nigeria",
+    "phone": "08044556677",
+    "website": "https://michaelbrown.com",
+    "image": "michaelbrown.JPEG",
+    "membershipLevel": "Silver"
   },
   {
-      "name": "Sarah Wilson",
-      "address": "1415 Trade St, Lagos, Nigeria",
-      "phone": "08055667788",
-      "website": "https://sarahwilson.com",
-      "image": "sarahwilson.JPEG",
-      "membershipLevel": "Bronze"
+    "name": "Sarah Wilson",
+    "address": "1415 Trade St, Lagos, Nigeria",
+    "phone": "08055667788",
+    "website": "https://sarahwilson.com",
+    "image": "sarahwilson.JPEG",
+    "membershipLevel": "Bronze"
   },
   {
-      "name": "David Lee",
-      "address": "1617 Industry Blvd, Lagos, Nigeria",
-      "phone": "08066778899",
-      "website": "https://davidlee.com",
-      "image": "davidlee.JPEG",
-      "membershipLevel": "Gold"
+    "name": "David Lee",
+    "address": "1617 Industry Blvd, Lagos, Nigeria",
+    "phone": "08066778899",
+    "website": "https://davidlee.com",
+    "image": "davidlee.JPEG",
+    "membershipLevel": "Gold"
   }
 ]

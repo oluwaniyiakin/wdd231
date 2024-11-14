@@ -5,27 +5,22 @@ async function fetchMembers() {
 }
 
 function displayMembers(members) {
-    const directory = document.getElementById('directory');
-    directory.innerHTML = '';
-
-    members.forEach(member => {
-        const memberCard = document.createElement('div');
-        memberCard.classList.add('card');
-        memberCard.innerHTML = `
+    const membersContainer = document.getElementById('members');
+    membersContainer.innerHTML = members.map(member => `
+        <div class="member-card">
             <img src="images/${member.image}" alt="${member.name}">
-            <h2>${member.name}</h2>
+            <h3>${member.name}</h3>
             <p><strong>Address:</strong> ${member.address}</p>
             <p><strong>Phone:</strong> ${member.phone}</p>
             <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
             <p><strong>Membership Level:</strong> ${member.membershipLevel}</p>
-        `;
-        directory.appendChild(memberCard);
-    });
+        </div>
+    `).join('');
 }
 
 document.getElementById('toggleView').addEventListener('click', () => {
-    const directory = document.getElementById('directory');
-    directory.classList.toggle('list-view');
+    document.getElementById('members').classList.toggle('grid-view');
+    document.getElementById('members').classList.toggle('list-view');
 });
 
 fetchMembers();
