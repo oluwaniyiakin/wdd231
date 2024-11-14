@@ -1,7 +1,12 @@
 async function fetchMembers() {
-    const response = await fetch('data/members.json');
-    const members = await response.json();
-    displayMembers(members);
+    try {
+        const response = await fetch('data/members.json');
+        if (!response.ok) throw new Error("Network response was not ok");
+        const members = await response.json();
+        displayMembers(members);
+    } catch (error) {
+        console.error("Failed to fetch members:", error);
+    }
 }
 
 function displayMembers(members) {
