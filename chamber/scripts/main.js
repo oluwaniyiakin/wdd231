@@ -1,44 +1,31 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const directory = document.getElementById("directory");
-    const toggleViewButton = document.getElementById("toggleView");
+async function fetchMembers() {
+    const response = await fetch('data/members.json');
+    const members = await response.json();
+    displayMembers(members);
+}
 
-    let isGridView = true;
+function displayMembers(members) {
+    const directory = document.getElementById('directory');
+    directory.innerHTML = '';
 
-    toggleViewButton.addEventListener("click", () => {
-        isGridView = !isGridView;
-        directory.classList.toggle("list-view", !isGridView);
-        directory.classList.toggle("grid-view", isGridView);
+    members.forEach(member => {
+        const memberCard = document.createElement('div');
+        memberCard.classList.add('card');
+        memberCard.innerHTML = `
+            <img src="images/${member.image}" alt="${member.name}">
+            <h2>${member.name}</h2>
+            <p><strong>Address:</strong> ${member.address}</p>
+            <p><strong>Phone:</strong> ${member.phone}</p>
+            <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
+            <p><strong>Membership Level:</strong> ${member.membershipLevel}</p>
+        `;
+        directory.appendChild(memberCard);
     });
+}
 
-    async function fetchMembers() {
-        try {
-            const response = await fetch("data/members.json");
-            const members = await response.json();
-            displayMembers(members);
-        } catch (error) {
-            console.error("Error fetching members:", error);
-        }
-    }
-
-    function displayMembers(members) {
-        directory.innerHTML = "";
-        members.forEach(member => {
-            const card = document.createElement("div");
-            card.classList.add("member-card");
-
-            card.innerHTML = `
-                <img src="images/${member.image}" alt="${member.name}">
-                <div class="member-info">
-                    <h2>${member.name}</h2>
-                    <p>${member.address}</p>
-                    <p>${member.phone}</p>
-                    <a href="${member.website}" target="_blank">Website</a>
-                    <p><strong>Membership Level:</strong> ${member.membershipLevel}</p>
-                </div>
-            `;
-            directory.appendChild(card);
-        });
-    }
-
-    fetchMembers();
+document.getElementById('toggleView').addEventListener('click', () => {
+    const directory = document.getElementById('directory');
+    directory.classList.toggle('list-view');
 });
+
+fetchMembers();
