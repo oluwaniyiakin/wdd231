@@ -1,20 +1,31 @@
-const apiKey = "YOUR_API_KEY";
-const city = "Lagos";
+const apiKey = 'your_openweathermap_api_key';
+const city = 'Lagos';
+const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
 
-async function getWeather() {
+(async function fetchWeather() {
     try {
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
+        const response = await fetch(apiUrl);
+        if (!response.ok) throw new Error('Failed to fetch weather data');
         const data = await response.json();
 
-        const weatherContainer = document.getElementById("weather-container");
-        weatherContainer.innerHTML = `
-            <p>Temperature: ${Math.round(data.main.temp)}°C</p>
-            <p>${data.weather.map(w => w.description).join(", ").toUpperCase()}</p>
-            <p>Humidity: ${data.main.humidity}%</p>
-        `;
+        displayWeather(data);
     } catch (error) {
-        console.error("Failed to fetch weather data", error);
+        console.error('Error fetching weather:', error);
     }
+})();
+
+function displayWeather(data) {
+    const weatherContainer = document.querySelector('.weather-info');
+    const current = data.list[0];
+    weatherContainer.innerHTML = `
+        <p><strong>Temperature:</strong> ${Math.round(current.main.temp)}°C</p>
+        <p><strong>Description:</strong> ${capitalizeWords(current.weather[0].description)}</p>
+    `;
 }
 
-getWeather();
+function capitalizeWords(str) {
+    return str
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+}
