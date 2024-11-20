@@ -98,6 +98,20 @@ header nav ul li a {
     max-width: 600px;
 }
 
+.weather-forecast {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.weather-forecast .forecast-day {
+    text-align: center;
+}
+
+.weather-forecast img {
+    max-width: 50px;
+}
+
 /* Spotlights Section */
 #spotlights {
     padding: 2rem 1rem;
