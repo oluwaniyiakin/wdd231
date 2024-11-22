@@ -1,4 +1,4 @@
-const apiKey = 'your_openweathermap_api_key';  // Replace with your API key
+const apiKey = '30e4649ada8c1a934e8984ad1ed75ad4';  // Replace with your API key
 const city = 'Lagos';
 const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
 
