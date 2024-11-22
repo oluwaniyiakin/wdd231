@@ -1,4 +1,4 @@
-const apiKey = '30e4649ada8c1a934e8984ad1ed75ad4';  // Replace with your API key
+const apiKey = '30e4649ada8c1a934e8984ad1ed75ad4'; // Your API key
 const city = 'Lagos';
 const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
 
@@ -17,7 +17,7 @@ const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid
 function displayWeather(data) {
     const weatherContainer = document.querySelector('.weather-info');
     const current = data.list[0];
-    const forecast = data.list.filter(item => item.dt_txt.includes("12:00:00")).slice(0, 3);  // Get 3-day forecast at noon
+    const forecast = data.list.filter(item => item.dt_txt.includes("12:00:00")).slice(0, 3); // Get 3-day forecast at noon
 
     weatherContainer.innerHTML = `
         <p><strong>Current Temperature:</strong> ${Math.round(current.main.temp)}°C</p>
