@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <meta name="description" content="Join the Chamber of Commerce and unlock exclusive membership benefits.">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Membership Application</h2>
+        <p>Fill out the form below to join the Chamber of Commerce.</p>
+
+        <form method="get" action="thankyou.html">
+            <!-- First Name -->
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" title="Enter your first name" autocomplete="given-name" required>
+
+            <!-- Last Name -->
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" title="Enter your last name" autocomplete="family-name" required>
+
+            <!-- Organization Title -->
+            <label for="organization-title">Organization Title:</label>
+            <input type="text" id="organization-title" name="organization-title" title="Enter your title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" required>
+
+            <!-- Email -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email" placeholder="example@email.com" required>
+
+            <!-- Phone -->
+            <label for="phone">Mobile Phone:</label>
+            <input type="tel" id="phone" name="phone" title="Enter your phone number" autocomplete="tel" required>
+
+            <!-- Organization Name -->
+            <label for="organization">Business/Organization Name:</label>
+            <input type="text" id="organization" name="organization" title="Enter your organization name" autocomplete="organization" required>
+
+            <!-- Membership Level -->
+            <label for="membership-level">Membership Level:</label>
+            <select id="membership-level" name="membership-level" required>
+                <option value="" disabled selected>Select a membership level</option>
+                <option value="non-profit">Non-Profit Membership (Free)</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+            </select>
+
+            <!-- Organization Description -->
+            <label for="description">Business/Organization Description:</label>
+            <textarea id="description" name="description" title="Enter a brief description of your organization"></textarea>
+
+            <!-- Timestamp -->
+            <input type="hidden" id="timestamp" name="timestamp">
+
+            <!-- Submit Button -->
+            <input type="submit" value="Apply Now">
+        </form>
+
+        <!-- Membership Cards -->
+        <div class="membership-cards">
+            <div class="membership-card" id="non-profit-card">
+                <h3>Non-Profit Membership</h3>
+                <button onclick="showModal('non-profit')">Learn More</button>
+            </div>
+            <div class="membership-card" id="bronze-card">
+                <h3>Bronze Membership</h3>
+                <button onclick="showModal('bronze')">Learn More</button>
+            </div>
+            <div class="membership-card" id="silver-card">
+                <h3>Silver Membership</h3>
+                <button onclick="showModal('silver')">Learn More</button>
+            </div>
+            <div class="membership-card" id="gold-card">
+                <h3>Gold Membership</h3>
+                <button onclick="showModal('gold')">Learn More</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Lagos Chamber of Commerce</p>
+    </footer>
+
+    <!-- Modals -->
+    <div id="non-profit-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('non-profit')">&times;</span>
+            <h3>Non-Profit Membership Benefits</h3>
+            <p>Enjoy free directory listing and exclusive non-profit networking events.</p>
+        </div>
+    </div>
+    <div id="bronze-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('bronze')">&times;</span>
+            <h3>Bronze Membership Benefits</h3>
+            <p>Directory listing, advertising opportunities, and event discounts.</p>
+        </div>
+    </div>
+    <div id="silver-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('silver')">&times;</span>
+            <h3>Silver Membership Benefits</h3>
+            <p>All bronze benefits, plus training programs and social media support.</p>
+        </div>
+    </div>
+    <div id="gold-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('gold')">&times;</span>
+            <h3>Gold Membership Benefits</h3>
+            <p>All silver benefits, premium advertising, and sponsorship opportunities.</p>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

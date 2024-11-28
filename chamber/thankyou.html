@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Chamber of Commerce</title>
+    <meta name="description" content="Thank you for joining the Chamber of Commerce.">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Lagos Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Thank You for Joining!</h2>
+        <p>Your membership application has been successfully submitted. Below is a summary of the information you provided:</p>
+        <div class="thankyou-summary">
+            <ul>
+                <li><strong>First Name:</strong> <span id="first-name"></span></li>
+                <li><strong>Last Name:</strong> <span id="last-name"></span></li>
+                <li><strong>Email:</strong> <span id="email"></span></li>
+                <li><strong>Phone:</strong> <span id="phone"></span></li>
+                <li><strong>Organization:</strong> <span id="organization"></span></li>
+                <li><strong>Date Submitted:</strong> <span id="timestamp"></span></li>
+            </ul>
+        </div>
+        <p><a href="index.html" class="button">Return to Home</a></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Lagos Chamber of Commerce</p>
+    </footer>
+
+    <script>
+        // Retrieve query parameters and display them
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById('first-name').textContent = params.get('first-name');
+        document.getElementById('last-name').textContent = params.get('last-name');
+        document.getElementById('email').textContent = params.get('email');
+        document.getElementById('phone').textContent = params.get('phone');
+        document.getElementById('organization').textContent = params.get('organization');
+        document.getElementById('timestamp').textContent = params.get('timestamp');
+    </script>
+</body>
+</html>
