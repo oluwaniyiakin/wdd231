@@ -71,79 +71,59 @@
 
                 <button type="submit">Submit Application</button>
             </form>
-            
-
-    <section class="membership-cards">
-        <div class="card" id="basic-card">
-          <h2>Basic Membership</h2>
-          <button class="modal-trigger" data-modal="modal-basic">View Benefits</button>
-        </div>
-        <div class="card" id="premium-card">
-          <h2>Premium Membership</h2>
-          <button class="modal-trigger" data-modal="modal-premium">View Benefits</button>
-        </div>
-        <div class="card" id="gold-card">
-          <h2>Gold Membership</h2>
-          <button class="modal-trigger" data-modal="modal-gold">View Benefits</button>
-        </div>
-        <div class="card" id="platinum-card">
-          <h2>Platinum Membership</h2>
-          <button class="modal-trigger" data-modal="modal-platinum">View Benefits</button>
-        </div>
-      </section>
-  
-      <!-- Modals -->
-      <div id="modal-basic" class="modal">
-        <div class="modal-content">
-          <h3>Basic Membership Benefits</h3>
-          <p>Details about Basic membership benefits go here.</p>
-          <button class="modal-close">Close</button>
-        </div>
-      </div>
-      <div id="modal-premium" class="modal">
-        <div class="modal-content">
-          <h3>Premium Membership Benefits</h3>
-          <p>Details about Premium membership benefits go here.</p>
-          <button class="modal-close">Close</button>
-        </div>
-      </div>
-      <div id="modal-gold" class="modal">
-        <div class="modal-content">
-          <h3>Gold Membership Benefits</h3>
-          <p>Details about Gold membership benefits go here.</p>
-          <button class="modal-close">Close</button>
-        </div>
-      </div>
-      <div id="modal-platinum" class="modal">
-        <div class="modal-content">
-          <h3>Platinum Membership Benefits</h3>
-          <p>Details about Platinum membership benefits go here.</p>
-          <button class="modal-close">Close</button>
-        </div>
-      </div>
         </section>
 
-        <section class="membership-levels">
-            <h2>Membership Levels</h2>
+        <section class="membership-cards">
+            <h2>Membership Benefits</h2>
             <div class="card-container">
-                <div class="card">
-                    <h3>Non-Profit</h3>
-                    <button data-modal-target="np-modal">Learn More</button>
+                <div class="card" id="basic-card">
+                    <h3>Basic Membership</h3>
+                    <button class="modal-trigger" data-modal="modal-basic">View Benefits</button>
                 </div>
-                <div class="card">
-                    <h3>Bronze</h3>
-                    <button data-modal-target="bronze-modal">Learn More</button>
+                <div class="card" id="premium-card">
+                    <h3>Premium Membership</h3>
+                    <button class="modal-trigger" data-modal="modal-premium">View Benefits</button>
                 </div>
-                <div class="card">
-                    <h3>Silver</h3>
-                    <button data-modal-target="silver-modal">Learn More</button>
+                <div class="card" id="gold-card">
+                    <h3>Gold Membership</h3>
+                    <button class="modal-trigger" data-modal="modal-gold">View Benefits</button>
                 </div>
-                <div class="card">
-                    <h3>Gold</h3>
-                    <button data-modal-target="gold-modal">Learn More</button>
+                <div class="card" id="platinum-card">
+                    <h3>Platinum Membership</h3>
+                    <button class="modal-trigger" data-modal="modal-platinum">View Benefits</button>
                 </div>
             </div>
         </section>
+
+        <!-- Modals -->
+        <div id="modal-basic" class="modal" hidden>
+            <div class="modal-content">
+                <h3>Basic Membership Benefits</h3>
+                <p>Details about Basic membership benefits go here.</p>
+                <button class="modal-close">Close</button>
+            </div>
+        </div>
+        <div id="modal-premium" class="modal" hidden>
+            <div class="modal-content">
+                <h3>Premium Membership Benefits</h3>
+                <p>Details about Premium membership benefits go here.</p>
+                <button class="modal-close">Close</button>
+            </div>
+        </div>
+        <div id="modal-gold" class="modal" hidden>
+            <div class="modal-content">
+                <h3>Gold Membership Benefits</h3>
+                <p>Details about Gold membership benefits go here.</p>
+                <button class="modal-close">Close</button>
+            </div>
+        </div>
+        <div id="modal-platinum" class="modal" hidden>
+            <div class="modal-content">
+                <h3>Platinum Membership Benefits</h3>
+                <p>Details about Platinum membership benefits go here.</p>
+                <button class="modal-close">Close</button>
+            </div>
+        </div>
     </main>
 
     <footer>
