@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,17 @@
   <meta name="description" content="Discover our vibrant community through the Chamber of Commerce. Learn about the area's demographics, attractions, and opportunities.">
   <meta property="og:title" content="Discover Our Community | Chamber of Commerce">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://oluwaniyiakin.github.io/wdd231/chamber/images/community.JPEG">
+  <meta property="og:image" content="images/community.JPEG">
   <meta property="og:url" content="https://oluwaniyiakin.github.io/wdd231/chamber/discover.html">
   <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/style.css">
   <title>Discover | Chamber of Commerce</title>
+  <script src="scripts/last-visit.js" defer></script>
 </head>
+
 <body>
+  <!-- Header Section -->
   <header>
     <div class="container">
       <h1>Chamber of Commerce</h1>
@@ -30,63 +34,72 @@
     </div>
   </header>
 
+  <!-- Main Content -->
   <main class="discover-layout">
-    <!-- Sidebar -->
+    <!-- Sidebar Section -->
     <aside class="sidebar">
+      <div id="visit-message"></div>
       <section>
         <h2>Demographics</h2>
-        <p>Our community is home to over 50,000 residents with a diverse mix of cultures, ages, and professions. With a median age of 35, our area is bustling with energy and innovation.</p>
+        <p>Our community is home to over 50,000 residents with a diverse mix of cultures, ages, and professions.</p>
       </section>
       <section>
         <h2>Key Statistics</h2>
         <ul>
-          <li>Population: 50,000,000+</li>
+          <li>Population: 50,000+</li>
           <li>Median Age: 35</li>
-          <li>Average Household Income: $60,000</li>
           <li>Businesses: 11,200+</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Upcoming Events</h2>
+        <ul>
+          <li>Festival of Lights - Dec 15</li>
+          <li>Food Expo - Jan 20</li>
+          <li>Summer Carnival - June 25</li>
         </ul>
       </section>
     </aside>
 
-    <!-- Main Content -->
+    <!-- Main Area -->
     <section class="main-content">
-      <h2>Discover Our Area</h2>
-      <p>Our region offers breathtaking scenery, historical landmarks, and a vibrant business community. Explore the many reasons why our area is a great place to live, work, and visit.</p>
-      
-      <!-- Image Grid with Lazy Loading -->
+      <h2>Discover Local Attractions</h2>
+      <p>Explore the beauty and charm of our community through these captivating images.</p>
       <div class="image-grid">
         <figure>
-          <img src="images/sc1.JPEG" loading="lazy" alt="Scenic view of the city">
-          <figcaption>Downtown skyline at sunset</figcaption>
+          <img src="images/placeholder.png" data-src="images/sc1.JPEG" alt="Scenic view" loading="lazy">
+          <figcaption>Scenic View</figcaption>
         </figure>
         <figure>
-          <img src="images/sc2.JPEG" loading="lazy" alt="Community park with walking trails">
-          <figcaption>Community park with walking trails</figcaption>
+          <img src="images/placeholder.png" data-src="images/sc2.JPEG" alt="Community Park" loading="lazy">
+          <figcaption>Community Park</figcaption>
         </figure>
         <figure>
-          <img src="images/sc3.JPEG" loading="lazy" alt="Historical landmark in the heart of the city">
-          <figcaption>Historical landmark</figcaption>
+          <img src="images/placeholder.png" data-src="images/sc3.JPEG" alt="Historical Landmark" loading="lazy">
+          <figcaption>Historical Landmark</figcaption>
         </figure>
         <figure>
-          <img src="images/sc4.JPEG" loading="lazy" alt="Annual festival celebration">
-          <figcaption>Local festival</figcaption>
+          <img src="images/placeholder.png" data-src="images/sc4.JPEG" alt="Annual Festival" loading="lazy">
+          <figcaption>Annual Festival</figcaption>
         </figure>
         <figure>
-          <img src="images/sc5.JPEG" loading="lazy" alt="Thriving business district">
-          <figcaption>Business district</figcaption>
+          <img src="images/placeholder.png" data-src="images/sc5.JPEG" alt="Business District" loading="lazy">
+          <figcaption>Business District</figcaption>
         </figure>
         <figure>
-          <img src="images/sc6.JPEG" loading="lazy" alt="Nature reserve perfect for hiking">
-          <figcaption>Eyo festival</figcaption>
+          <img src="images/placeholder.png" data-src="images/sc6.JPEG" alt="Nature Reserve" loading="lazy">
+          <figcaption>Nature Reserve</figcaption>
         </figure>
       </div>
     </section>
   </main>
 
+  <!-- Footer Section -->
   <footer>
-    <p>&copy; 2024 Chamber of Commerce. All Rights Reserved | Oluwaniyi Akin Oladapo.</p>
+    <p>&copy; 2024 Chamber of Commerce. All rights reserved | Oluwaniyi Akin Oladapo.</p>
   </footer>
 
-  <script src="scripts/script1.js"></script>
+  <script src="scripts/image-hover.js" defer></script>
 </body>
+
 </html>

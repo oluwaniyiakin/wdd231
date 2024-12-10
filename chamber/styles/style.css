@@ -310,3 +310,12 @@ form input[type="submit"]:hover {
         align-items: center;
     }
 }
+/* Hover effect for desktop view */
+@media (min-width: 768px) {
+    .hover-effect {
+      transform: scale(1.1);
+      filter: brightness(1.2);
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+  }
+  
