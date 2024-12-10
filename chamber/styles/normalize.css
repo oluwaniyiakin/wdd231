@@ -4,108 +4,107 @@
    ========================================================================== */
 
    html {
-    line-height: 1.15; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
-  }
-  
-  body {
-    margin: 0;
-  }
-  
-  /* Sections
-     ========================================================================== */
-  
-  main {
-    display: block;
-  }
-  
-  /* Grouping content
-     ========================================================================== */
-  
-  hr {
-    box-sizing: content-box; /* 1 */
-    height: 0; /* 1 */
-    overflow: visible; /* 2 */
-  }
-  
-  /* Text-level semantics
-     ========================================================================== */
-  
-  pre {
-    font-family: monospace, monospace; /* 1 */
-    font-size: 1em; /* 2 */
-  }
-  
-  /* Embedded content
-     ========================================================================== */
-  
-  img {
-    border-style: none;
-  }
-  
-  /* Forms
-     ========================================================================== */
-  
-  button,
-  input,
-  optgroup,
-  select,
-  textarea {
-    font-family: inherit; /* 1 */
-    font-size: 100%; /* 1 */
-    line-height: 1.15; /* 1 */
-    margin: 0; /* 2 */
-  }
-  
-  button,
-  input { /* 1 */
-    overflow: visible;
-  }
-  
-  button,
-  select { /* 1 */
-    text-transform: none;
-  }
-  
-  button,
-  [type="button"],
-  [type="reset"],
-  [type="submit"] {
-    -webkit-appearance: button;
-  }
-  
-  button::-moz-focus-inner,
-  [type="button"]::-moz-focus-inner,
-  [type="reset"]::-moz-focus-inner,
-  [type="submit"]::-moz-focus-inner {
-    border-style: none;
-    padding: 0;
-  }
-  
-  button:-moz-focus,
-  [type="button"]:-moz-focus,
-  [type="reset"]:-moz-focus,
-  [type="submit"]:-moz-focus {
-    outline: 1px dotted ButtonText;
-  }
-  
-  fieldset {
-    padding: 0.35em 0.75em 0.625em;
-  }
-  
-  legend {
-    box-sizing: border-box; /* 1 */
-    color: inherit; /* 2 */
-    display: table; /* 1 */
-    max-width: 100%; /* 1 */
-    padding: 0; /* 3 */
-    white-space: normal; /* 1 */
-  }
-  
-  /* Misc
-     ========================================================================== */
-  
-  [hidden] {
-    display: none;
-  }
-  
+    line-height: 1.15; /* Improve text readability */
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in Safari */
+}
+
+body {
+    margin: 0; /* Remove default margin */
+}
+
+/* Sections
+   ========================================================================== */
+
+main {
+    display: block; /* Ensure main behaves like a block element */
+}
+
+/* Grouping Content
+   ========================================================================== */
+
+hr {
+    box-sizing: content-box; /* Ensure proper box sizing for horizontal rules */
+    height: 0; /* Remove default height */
+    overflow: visible; /* Prevent clipping of content around hr */
+}
+
+/* Text-Level Semantics
+   ========================================================================== */
+
+pre {
+    font-family: monospace, monospace; /* Set default monospace font */
+    font-size: 1em; /* Match font size with surrounding text */
+}
+
+/* Embedded Content
+   ========================================================================== */
+
+img {
+    border-style: none; /* Remove border around images */
+}
+
+/* Forms
+   ========================================================================== */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit; /* Use the same font as the parent element */
+    font-size: 100%; /* Match font size to the parent */
+    line-height: 1.15; /* Improve text readability */
+    margin: 0; /* Remove default margin */
+}
+
+button,
+input {
+    overflow: visible; /* Allow content to overflow */
+}
+
+button,
+select {
+    text-transform: none; /* Prevent automatic capitalization */
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button; /* Remove default styling in Safari */
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none; /* Remove inner border in Firefox */
+    padding: 0; /* Remove inner padding */
+}
+
+button:-moz-focus,
+[type="button"]:-moz-focus,
+[type="reset"]:-moz-focus,
+[type="submit"]:-moz-focus {
+    outline: 1px dotted ButtonText; /* Add focus outline in Firefox */
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em; /* Ensure consistent spacing */
+}
+
+legend {
+    box-sizing: border-box; /* Include padding and border in size */
+    color: inherit; /* Match text color with the parent */
+    display: table; /* Ensure proper layout */
+    max-width: 100%; /* Prevent content overflow */
+    padding: 0; /* Remove default padding */
+    white-space: normal; /* Allow text to wrap */
+}
+
+/* Miscellaneous
+   ========================================================================== */
+
+[hidden] {
+    display: none; /* Hide elements that are marked as hidden */
+}
