@@ -1,4 +1,5 @@
-// JavaScript File for Lagos Market Guide
+// Import JSON Data (assuming data is in a separate module file)
+import marketData from './data/markets.json' assert { type: 'json' };
 
 // DOM Elements
 const navToggle = document.getElementById('nav-toggle');
@@ -32,21 +33,21 @@ lazyImages.forEach((image) => {
 // Fetch and Display Market Data
 async function fetchMarketData() {
   try {
-    const response = await fetch('data/markets.json'); // Ensure this JSON file is included in your project
-    const data = await response.json();
-    buildDirectory(data);
-    buildVendors(data);
-    buildEvents(data);
+    // Simulate fetching data from a remote source
+    const data = await Promise.resolve(marketData);
+    buildDirectory(data.markets);
+    buildVendors(data.vendors);
+    buildEvents(data.events);
   } catch (error) {
     console.error('Error fetching market data:', error);
   }
 }
 
 // Build Directory Page
-function buildDirectory(data) {
+function buildDirectory(markets) {
   if (!directoryContainer) return;
 
-  data.markets.forEach((market) => {
+  markets.forEach((market) => {
     const marketCard = document.createElement('div');
     marketCard.classList.add('market-card');
     marketCard.innerHTML = `
@@ -60,10 +61,10 @@ function buildDirectory(data) {
 }
 
 // Build Vendors Page
-function buildVendors(data) {
+function buildVendors(vendors) {
   if (!vendorContainer) return;
 
-  data.vendors.forEach((vendor) => {
+  vendors.forEach((vendor) => {
     const vendorCard = document.createElement('div');
     vendorCard.classList.add('vendor-card');
     vendorCard.innerHTML = `
@@ -77,10 +78,10 @@ function buildVendors(data) {
 }
 
 // Build Events Page
-function buildEvents(data) {
+function buildEvents(events) {
   if (!eventContainer) return;
 
-  data.events.forEach((event) => {
+  events.forEach((event) => {
     const eventCard = document.createElement('div');
     eventCard.classList.add('event-card');
     eventCard.innerHTML = `
@@ -143,10 +144,21 @@ function saveRSVP(rsvp) {
   localStorage.setItem('rsvpList', JSON.stringify(rsvpList));
 }
 
-// Load and Display RSVP Data
+// Load and Display RSVP Data (for potential future use)
 function loadRSVPData() {
   const rsvpList = JSON.parse(localStorage.getItem('rsvpList')) || [];
-  console.log('RSVP List:', rsvpList); // You can display this data as needed
+  console.log('RSVP List:', rsvpList); // Modify this to display data if needed
+}
+
+// Conditional Example: Highlight Markets Open Today
+function highlightOpenMarkets(markets) {
+  const today = new Date().getDay(); // 0 = Sunday, 1 = Monday, etc.
+  markets.forEach((market) => {
+    if (market.openDays.includes(today)) {
+      const marketElement = document.querySelector(`[alt="${market.name}"]`).parentElement;
+      marketElement.classList.add('highlight');
+    }
+  });
 }
 
 // Initialize

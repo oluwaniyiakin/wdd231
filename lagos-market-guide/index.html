@@ -15,46 +15,96 @@
     <link rel="icon" href="images/favicon.ico" type="image/png">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Market Directory</a></li>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Lagos Markets</h1>
+            </div>
+            <button class="menu-toggle" aria-label="Open Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="vendors.html">Vendors</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="attributions.html">Attributions</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
+        <!-- Hero Section -->
         <section class="hero">
-            <h1>Welcome to the Lagos Community Market Guide</h1>
-            <p>Discover Lagos' vibrant markets, rich culture, and local artisans.</p>
-            <a href="directory.html" class="cta-button">Explore Markets</a>
+            <div class="hero-content">
+                <h1>Discover the Heart of Lagos</h1>
+                <p>Explore the vibrant markets, rich culture, and local artisans that define the spirit of Lagos.</p>
+                <a href="directory.html" class="cta-button">Explore Markets</a>
+            </div>
         </section>
+
+        <!-- Highlights Section -->
         <section class="highlights">
-            <h2>Highlights</h2>
-            <div class="highlight-item">
-                <img src="images/Balogun Market.jpeg" alt="Balogun Market">
-                <h3>Balogun Market</h3>
-                <p>The heartbeat of Lagos shopping.</p>
+            <h2>Market Highlights</h2>
+            <div class="highlight-container">
+                <div class="highlight-item">
+                    <img src="images/Balogun.jpeg" alt="Balogun Market" loading="lazy">
+                    <h3>Balogun Market</h3>
+                    <p>The heartbeat of Lagos shopping.</p>
+                </div>
+                <div class="highlight-item">
+                    <img src="images/Lekki.jpeg" alt="Lekki Arts and Crafts Market" loading="lazy">
+                    <h3>Lekki Arts & Crafts</h3>
+                    <p>Explore Nigeria's finest artisans.</p>
+                </div>
+                <div class="highlight-item">
+                    <img src="images/egbeda.jpeg" alt="Egbeda Idimu Market" loading="lazy">
+                    <h3>Egbeda Idimu Market</h3>
+                    <p>Where locals find daily treasures.</p>
+                </div>
             </div>
-            <div class="highlight-item">
-                <img src="images/Lekki Arts and Crafts Market.jpeg" alt="Lekki Arts and Crafts Market">
-                <h3>Lekki Arts and Crafts Market</h3>
-                <p>Explore Nigeria's finest artisans.</p>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <h2>What We Offer</h2>
+            <div class="features-container">
+                <div class="feature">
+                    <h3>Comprehensive Market Guide</h3>
+                    <p>Get detailed information about popular and hidden markets in Lagos.</p>
+                </div>
+                <div class="feature">
+                    <h3>Vendor Listings</h3>
+                    <p>Connect with trusted local artisans and vendors.</p>
+                </div>
+                <div class="feature">
+                    <h3>Event Updates</h3>
+                    <p>Stay informed about market events and cultural festivities.</p>
+                </div>
             </div>
-            <div class="highlight-item">
-                <img src="images/egbeda.jpeg" alt="Egbeda Idimu market">
-                <h3>Egbeda Idimu market</h3>
-                <p>Explore Nigeria's finest artisans.</p>
-            </div>
+        </section>
+
+        <!-- Newsletter Signup Section -->
+        <section class="newsletter">
+            <h2>Stay Connected</h2>
+            <form class="newsletter-form" action="#" method="POST">
+                <label for="email">Sign up for updates on Lagos markets:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Lagos Community Market Guide | <a href="attributions.html">Attributions</a></p>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Lagos Community Market Guide</p>
+            <p><a href="attributions.html">Attributions</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+        </div>
     </footer>
+
     <!-- JavaScript -->
-  <script src="scripts/lagosjs"></script>
+    <script src="scripts/lagos.js"></script>
 </body>
 </html>
