@@ -164,3 +164,4 @@ function highlightOpenMarkets(markets) {
 // Initialize
 fetchMarketData();
 loadRSVPData();
+const response = await fetch('data/markets.json');

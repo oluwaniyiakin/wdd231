@@ -1,35 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vendors - Lagos Community Market Guide</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <meta name="description" content="Meet the vendors of Lagos markets! Explore local artisans, traders, and businesses contributing to the vibrant market culture of Lagos.">
+    <meta name="keywords" content="Lagos vendors, local businesses, artisans, traders, Lagos market vendors">
+    <meta name="author" content="Lagos Market Guide">
+    <title>Lagos Market Vendors</title>
+    <link rel="stylesheet" href="styles/vendour.css">
+    <script type="module" src="scripts/lagos.js" defer></script>
 </head>
+
 <body>
     <header>
+        <h1>Lagos Market Vendors</h1>
         <nav>
-            <ul>
+            <button id="nav-toggle" aria-label="Toggle Navigation Menu">Menu</button>
+            <ul id="nav-menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Market Directory</a></li>
-                <li><a href="vendors.html">Vendors</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="vendors.html" class="active">Vendors</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="attributions.html">Attributions</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <h1>Vendor Profiles</h1>
-        <div class="vendor-profile">
-            <h2>Vendor Name</h2>
-            <p>Specialty: Handmade jewelry</p>
-            <p>Contact: <a href="mailto:vendor@example.com">vendor@example.com</a></p>
-        </div>
+        <section class="home-banner">
+            <h1>Meet Our Vendors</h1>
+            <p>Discover the faces behind the markets: artisans, traders, and business owners.</p>
+        </section>
+
+        <section class="vendor-list">
+            <h2>Our Vendors</h2>
+
+            <!-- Sample Vendor Cards -->
+            <div class="vendor-card">
+                <img src="images/je.jpeg" alt="Ade's Jewelry Creations" loading="lazy">
+                <h3>Ade's Jewelry Creations</h3>
+                <p>Specialty: Handmade jewelry and accessories</p>
+                <a href="mailto:ade.jewelry@gmail.com">Contact Vendor</a>
+            </div>
+
+            <div class="vendor-card">
+                <img src="images/bi.jpeg" alt="Bisi's Fresh Produce" loading="lazy">
+                <h3>Bisi's Fresh Produce</h3>
+                <p>Specialty: Organic fruits and vegetables</p>
+                <a href="tel:+2348001234567">Call Vendor</a>
+            </div>
+
+            <div class="vendor-card">
+                <img src="images/le.jpeg" alt="Chukwu's Leather Goods" loading="lazy">
+                <h3>Chukwu's Leather Goods</h3>
+                <p>Specialty: Handcrafted leather bags and shoes</p>
+                <a href="https://chukwu-leather.com" target="_blank">Visit Website</a>
+            </div>
+
+            <div class="vendor-card">
+                <img src="images/art.jpeg" alt="Damilola's Arts and Prints" loading="lazy">
+                <h3>Damilola's Arts and Prints</h3>
+                <p>Specialty: Wall art, custom prints, and paintings</p>
+                <a href="mailto:damilola.art@gmail.com">Contact Vendor</a>
+            </div>
+
+            <div class="vendor-card">
+                <img src="images/sp.jpeg" alt="Ifeanyi's Spices & Condiments" loading="lazy">
+                <h3>Ifeanyi's Spices & Condiments</h3>
+                <p>Specialty: Locally sourced spices and seasonings</p>
+                <a href="tel:+2348009876543">Call Vendor</a>
+            </div>
+
+            <div class="vendor-card">
+                <img src="images/fa.jpeg" alt="Mariam's Fashion Boutique" loading="lazy">
+                <h3>Mariam's Fashion Boutique</h3>
+                <p>Specialty: Ankara designs and tailored clothing</p>
+                <a href="https://mariam-boutique.com" target="_blank">Visit Website</a>
+            </div>
+        </section>
+
     </main>
+
     <footer>
-        <p>&copy; 2024 Lagos Community Market Guide | <a href="attributions.html">Attributions</a></p>
+        <p>&copy; 2024 Lagos Market Guide. All rights reserved.</p>
+        <p><a href="attributions.html">Attributions</a> | <a href="#">Privacy Policy</a></p>
     </footer>
-    <!-- JavaScript -->
-  <script src="scripts/lagosjs"></script>
 </body>
+
 </html>

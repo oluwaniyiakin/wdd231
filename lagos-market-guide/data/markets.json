@@ -1,0 +1,45 @@
+{
+    "markets": [
+      {
+        "name": "Balogun Market",
+        "description": "One of the largest markets in Lagos, offering a variety of goods from textiles to electronics.",
+        "image": "images/balogun-market.jpg",
+        "link": "https://example.com/balogun"
+      },
+      {
+        "name": "Lekki Market",
+        "description": "Known for unique arts and crafts, perfect for souvenirs and cultural artifacts.",
+        "image": "images/lekki-market.jpg",
+        "link": "https://example.com/lekki"
+      }
+    ],
+    "vendors": [
+      {
+        "name": "Chika's Fashion",
+        "specialty": "Traditional Nigerian clothing and accessories.",
+        "image": "images/vendor-chika.jpg",
+        "contact": "https://example.com/chika"
+      },
+      {
+        "name": "Tunde's Spices",
+        "specialty": "Organic spices and local herbs.",
+        "image": "images/vendor-tunde.jpg",
+        "contact": "https://example.com/tunde"
+      }
+    ],
+    "events": [
+      {
+        "title": "Lagos Market Festival",
+        "date": "2024-12-15",
+        "location": "Balogun Market",
+        "details": "A day-long celebration featuring music, food, and local crafts."
+      },
+      {
+        "title": "Arts and Crafts Workshop",
+        "date": "2024-12-20",
+        "location": "Lekki Market",
+        "details": "Learn to make traditional Nigerian crafts with local artisans."
+      }
+    ]
+  }
+  

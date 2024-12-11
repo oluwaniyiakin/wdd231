@@ -1,42 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Market Directory - Lagos Community Market Guide</title>
+    <meta name="description" content="Explore the vibrant markets of Lagos with our detailed directory, featuring local vendors and events.">
+    <meta name="keywords" content="Lagos markets, market directory, local vendors, shopping in Lagos">
+    <meta name="author" content="Lagos Market Guide">
+    <title>Lagos Market Directory</title>
     <link rel="stylesheet" href="styles/main.css">
+    <script type="module" src="scripts/lagos.js" defer></script>
 </head>
+
 <body>
     <header>
+        <h1>Lagos Market Directory</h1>
         <nav>
-            <ul>
+            <button id="nav-toggle" aria-label="Toggle navigation menu">Menu</button>
+            <ul id="nav-menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Market Directory</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
                 <li><a href="vendors.html">Vendors</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="attributions.html">Attributions</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <h1>Market Directory</h1>
-        <ul class="market-list">
-            <li>
-                <h2>Balogun Market</h2>
-                <p>Location: Lagos Island</p>
-                <p>Specialties: Clothing, accessories, and more.</p>
-            </li>
-            <li>
-                <h2>Lekki Arts and Crafts Market</h2>
-                <p>Location: Lekki</p>
-                <p>Specialties: Art, jewelry, and crafts.</p>
-            </li>
-        </ul>
+        <section class="home-banner">
+            <h1>Discover Lagos Markets</h1>
+            <p>Explore vibrant markets and find everything you need in Lagos.</p>
+        </section>
+
+        <section class="market-directory">
+            <h2>Market Directory</h2>
+            <div id="directory">
+                <!-- Dynamically loaded market cards -->
+            </div>
+
+            <!-- Sample Market Cards -->
+            <div class="market-card">
+                <img src="images/tejuosh.jpeg" alt="Tejuosho Market" loading="lazy">
+                <h3>Tejuosho Market</h3>
+                <p>A modern marketplace offering clothing, electronics, and household goods.</p>
+                <a href="#" target="_blank">Visit Market</a>
+            </div>
+
+            <div class="market-card">
+                <img src="images/balogun.jpeg" alt="Balogun Market" loading="lazy">
+                <h3>Balogun Market</h3>
+                <p>The go-to market for fabrics, fashion items, and wholesale goods.</p>
+                <a href="#" target="_blank">Visit Market</a>
+            </div>
+
+            <div class="market-card">
+                <img src="images/lekki.jpeg" alt="Lekki Arts and Crafts Market" loading="lazy">
+                <h3>Lekki Arts and Crafts Market</h3>
+                <p>Known for unique art pieces, crafts, and souvenirs from local artisans.</p>
+                <a href="#" target="_blank">Visit Market</a>
+            </div>
+        </section>
+
     </main>
+
     <footer>
-        <p>&copy; 2024 Lagos Community Market Guide | <a href="attributions.html">Attributions</a></p>
+        <p>&copy; 2024 Lagos Market Guide. All rights reserved.</p>
+        <p><a href="attributions.html">Attributions</a> | <a href="#">Privacy Policy</a></p>
     </footer>
-    <!-- JavaScript -->
-  <script src="scripts/lagosjs"></script>
 </body>
+
 </html>
