@@ -1,35 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events - Lagos Community Market Guide</title>
+    <meta name="description" content="Stay updated with the latest events happening in Lagos markets. Discover cultural festivals, trade fairs, and community gatherings.">
+    <meta name="keywords" content="Lagos market events, cultural festivals, trade fairs, community gatherings">
+    <meta name="author" content="Lagos Market Guide">
+    <title>Lagos Market Events</title>
     <link rel="stylesheet" href="styles/main.css">
+    <script type="module" src="scripts/lagos.js" defer></script>
 </head>
+
 <body>
     <header>
+        <h1>Lagos Market Events</h1>
         <nav>
-            <ul>
+            <button id="nav-toggle" aria-label="Toggle Navigation Menu">Menu</button>
+            <ul id="nav-menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Market Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="vendors.html">Vendors</a></li>
-                <li><a href="events.html">Events</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
                 <li><a href="attributions.html">Attributions</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <h1>Events and Festivals</h1>
-        <div class="event">
-            <h2>Balogun Market Festival</h2>
-            <p>Date: March 15, 2024</p>
-            <p>Description: A celebration of Lagos' vibrant market culture.</p>
-        </div>
+        <section class="home-banner">
+            <h1>Upcoming Market Events</h1>
+            <p>Explore exciting events and activities happening across Lagos markets.</p>
+        </section>
+
+        <section class="event-list">
+            <h2>Featured Events</h2>
+
+            <!-- Sample Event Cards -->
+            <div class="event-card">
+                <img src="images/festival.jpeg" alt="Lagos Cultural Festival" loading="lazy">
+                <h3>Lagos Cultural Festival</h3>
+                <p><strong>Date:</strong> December 20, 2024 | <strong>Location:</strong> Freedom Park, Lagos Island</p>
+                <p>Celebrate the rich cultural heritage of Lagos with music, dance, and art exhibitions.</p>
+                <button class="rsvp-button">RSVP Now</button>
+            </div>
+
+            <div class="event-card">
+                <img src="images/trade_fair.jpeg" alt="Lagos Trade Fair" loading="lazy">
+                <h3>Lagos Trade Fair</h3>
+                <p><strong>Date:</strong> January 15, 2025 | <strong>Location:</strong> Tafawa Balewa Square</p>
+                <p>Join the largest trade fair in Lagos and explore a variety of local and international products.</p>
+                <button class="rsvp-button">RSVP Now</button>
+            </div>
+
+            <div class="event-card">
+                <h3>Farmers Market Meetup</h3>
+                <p><strong>Date:</strong> February 5, 2025 | <strong>Location:</strong> Lekki Market</p>
+                <p>Connect with local farmers and learn about sustainable agricultural practices.</p>
+                <button class="rsvp-button">RSVP Now</button>
+            </div>
+
+            <div class="event-card">
+                <h3>Artisan Workshop</h3>
+                <p><strong>Date:</strong> March 12, 2025 | <strong>Location:</strong> Balogun Market</p>
+                <p>Learn traditional crafts and techniques from experienced artisans in Lagos.</p>
+                <button class="rsvp-button">RSVP Now</button>
+            </div>
+        </section>
+
     </main>
+
     <footer>
-        <p>&copy; 2024 Lagos Community Market Guide | <a href="attributions.html">Attributions</a></p>
+        <p>&copy; 2024 Lagos Market Guide.Oluwaniyi Akin Oladapo: All rights reserved.</p>
+        <p><a href="attributions.html">Attributions</a> | <a href="#">Privacy Policy</a></p>
     </footer>
-    <!-- JavaScript -->
-  <script src="scripts/lagosjs"></script>
 </body>
+
 </html>
